@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qiscus_date_and_time">%1$s at %2$s</string>
+    <string name="qiscus_date_format" translatable="false">MMMM dd, yyyy</string>
+    <string name="qiscus_few_seconds_ago">in few seconds ago</string>
+    <string name="qiscus_hour_format" translatable="false">hh:mm a</string>
+    <string name="qiscus_nomedia" translatable="false">.nomedia</string>
+    <string name="qiscus_today">Today</string>
+</resources>

@@ -62,16 +62,16 @@ dependencies {
     def remoteDependencies = rootProject.ext.remoteDependencies
     def remoteTestDependencies = rootProject.ext.remoteTestDependencies
 
-    compile project(':data')
-    compile remoteDependencies.rxKotlin
-    compile remoteDependencies.kotlin
-    compile remoteDependencies.gson
-    compile remoteDependencies.okHttp
-    compile remoteDependencies.okHttpLogger
-    compile remoteDependencies.retrofit
-    compile remoteDependencies.retrofitConverter
-    compile remoteDependencies.retrofitAdapter
-    compile remoteDependencies.rxunfurl
+    api project(':data')
+    api remoteDependencies.rxKotlin
+    api remoteDependencies.kotlin
+    api remoteDependencies.gson
+    api remoteDependencies.okHttp
+    api remoteDependencies.okHttpLogger
+    api remoteDependencies.retrofit
+    api remoteDependencies.retrofitConverter
+    api remoteDependencies.retrofitAdapter
+    api remoteDependencies.rxunfurl
 
     testImplementation remoteTestDependencies.junit
     testImplementation remoteTestDependencies.mockito

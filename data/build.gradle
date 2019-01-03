@@ -61,9 +61,9 @@ dependencies {
     def dataDependencies = rootProject.ext.dataDependencies
     def dataTestDependencies = rootProject.ext.dataTestDependencies
 
-    compile project(':domain')
-    compile dataDependencies.rxKotlin
-    compile dataDependencies.kotlin
+    api project(':domain')
+    api dataDependencies.rxKotlin
+    api dataDependencies.kotlin
 
     testImplementation dataTestDependencies.junit
     testImplementation dataTestDependencies.mockito

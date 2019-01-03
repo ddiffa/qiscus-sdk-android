@@ -54,19 +54,19 @@ dependencies {
     def mobileDependencies = rootProject.ext.mobileDependencies
     def mobileTestDependencies = rootProject.ext.mobileTestDependencies
 
-    compile project(':presentation')
+    api project(':presentation')
 
-    compile mobileDependencies.kotlin
-    compile mobileDependencies.rxKotlin
-    compile mobileDependencies.androidAnnotations
-    compile mobileDependencies.androidSupportV4
-    compile mobileDependencies.androidSupportV13
-    compile mobileDependencies.appCompatV7
-    compile mobileDependencies.supportRecyclerView
-    compile mobileDependencies.supportDesign
-    compile mobileDependencies.rxAndroid
-    compile mobileDependencies.glide
-    compile mobileDependencies.emoji
+    api mobileDependencies.kotlin
+    api mobileDependencies.rxKotlin
+    api mobileDependencies.androidAnnotations
+    api mobileDependencies.androidSupportV4
+    api mobileDependencies.androidSupportV13
+    api mobileDependencies.appCompatV7
+    api mobileDependencies.supportRecyclerView
+    api mobileDependencies.supportDesign
+    api mobileDependencies.rxAndroid
+    api mobileDependencies.glide
+    api mobileDependencies.emoji
 
     testImplementation mobileTestDependencies.kotlinJUnit
 

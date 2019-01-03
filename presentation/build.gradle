@@ -57,21 +57,21 @@ dependencies {
     def presentationDependencies = rootProject.ext.presentationDependencies
     def presentationTestDependencies = rootProject.ext.presentationTestDependencies
 
-    compile project(':core')
-    compile presentationDependencies.kotlin
-    compile presentationDependencies.rxKotlin
-    compile presentationDependencies.androidAnnotations
-    compile presentationDependencies.androidSupportV4
-    compile presentationDependencies.androidSupportV13
-    compile presentationDependencies.appCompatV7
-    compile presentationDependencies.supportRecyclerView
-    compile presentationDependencies.supportDesign
-    compile presentationDependencies.cardView
-    compile presentationDependencies.customTabs
-    compile presentationDependencies.rxAndroid
-    compile presentationDependencies.glide
-    compile presentationDependencies.manggil
-    compile presentationDependencies.flexbox
+    api project(':core')
+    api presentationDependencies.kotlin
+    api presentationDependencies.rxKotlin
+    api presentationDependencies.androidAnnotations
+    api presentationDependencies.androidSupportV4
+    api presentationDependencies.androidSupportV13
+    api presentationDependencies.appCompatV7
+    api presentationDependencies.supportRecyclerView
+    api presentationDependencies.supportDesign
+    api presentationDependencies.cardView
+    api presentationDependencies.customTabs
+    api presentationDependencies.rxAndroid
+    api presentationDependencies.glide
+    api presentationDependencies.manggil
+    api presentationDependencies.flexbox
 
     testImplementation presentationTestDependencies.kotlinJUnit
 

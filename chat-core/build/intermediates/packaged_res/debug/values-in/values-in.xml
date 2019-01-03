@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qiscus_date_and_time">%1$s, jam %2$s</string>
+    <string name="qiscus_few_seconds_ago">beberapa saat lalu</string>
+    <string name="qiscus_today">Hari ini</string>
+</resources>

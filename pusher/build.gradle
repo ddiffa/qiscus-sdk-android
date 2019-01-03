@@ -65,12 +65,12 @@ dependencies {
     def pusherDependencies = rootProject.ext.pusherDependencies
     def pusherTestDependencies = rootProject.ext.pusherTestDependencies
 
-    compile project(':data')
-    compile pusherDependencies.kotlin
-    compile pusherDependencies.rxKotlin
-    compile pusherDependencies.gson
-    compile pusherDependencies.mqtt
-    compile pusherDependencies.mqttAndroid
+    api project(':data')
+    api pusherDependencies.kotlin
+    api pusherDependencies.rxKotlin
+    api pusherDependencies.gson
+    api pusherDependencies.mqtt
+    api pusherDependencies.mqttAndroid
 
     testImplementation pusherTestDependencies.junit
     testImplementation pusherTestDependencies.kotlinJUnit

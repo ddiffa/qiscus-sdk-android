@@ -65,10 +65,10 @@ dependencies {
     def localDependencies = rootProject.ext.localDependencies
     def localTestDependencies = rootProject.ext.localTestDependencies
 
-    compile project(':data')
-    compile localDependencies.kotlin
-    compile localDependencies.rxKotlin
-    compile localDependencies.gson
+    api project(':data')
+    api localDependencies.kotlin
+    api localDependencies.rxKotlin
+    api localDependencies.gson
 
     testImplementation localTestDependencies.junit
     testImplementation localTestDependencies.kotlinJUnit

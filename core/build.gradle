@@ -62,15 +62,15 @@ dependencies {
     def coreDependencies = rootProject.ext.coreDependencies
     def coreTestDependencies = rootProject.ext.coreTestDependencies
 
-    compile project(':domain')
-    compile project(':data')
-    compile project(':local')
-    compile project(':remote')
-    compile project(':pusher')
-    compile coreDependencies.androidSupportV4
-    compile coreDependencies.kotlin
-    compile coreDependencies.rxKotlin
-    compile coreDependencies.rxAndroid
+    api project(':domain')
+    api project(':data')
+    api project(':local')
+    api project(':remote')
+    api project(':pusher')
+    api coreDependencies.androidSupportV4
+    api coreDependencies.kotlin
+    api coreDependencies.rxKotlin
+    api coreDependencies.rxAndroid
 
     testImplementation coreTestDependencies.junit
     testImplementation coreTestDependencies.kotlinJUnit

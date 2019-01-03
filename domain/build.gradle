@@ -62,8 +62,8 @@ dependencies {
     def domainDependencies = rootProject.ext.domainDependencies
     def domainTestDependencies = rootProject.ext.domainTestDependencies
 
-    compile domainDependencies.rxKotlin
-    compile domainDependencies.kotlin
+    api domainDependencies.rxKotlin
+    api domainDependencies.kotlin
 
     testImplementation domainTestDependencies.junit
     testImplementation domainTestDependencies.mockito
