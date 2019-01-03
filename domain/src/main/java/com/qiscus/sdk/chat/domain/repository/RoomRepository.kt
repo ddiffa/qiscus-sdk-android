@@ -43,4 +43,6 @@ interface RoomRepository {
     fun getRoomsWithSpecificIds(roomIds: List<String>, channelIds: List<String>): Single<List<Room>>
 
     fun clearData(): Completable
+
+
 }
